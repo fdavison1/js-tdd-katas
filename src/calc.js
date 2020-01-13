@@ -1,7 +1,20 @@
 
 class Calc {
     add(numbers) {
-        return -1;
+        if (!numbers) {
+            return 0
+        }
+
+        if (+numbers <= 0){
+            throw new Error('negatives not allowed')
+        }
+
+
+        let numbers2 = numbers.split(',')
+        return numbers2.reduce((acc, el) => {
+            return +acc + +el
+        })
+
     }
 }
 
