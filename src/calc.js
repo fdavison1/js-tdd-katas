@@ -5,7 +5,7 @@ class Calc {
             return 0
         }
 
-        if (+numbers <= 0){
+        if (+numbers <= 0) {
             throw new Error('negatives not allowed')
         }
 
